@@ -2,7 +2,7 @@ let ws = new WebSocket("ws://wsei.edu.pl:8010");
 
 ws.onopen = function() {
     ws.send("Message to send");
-    console.log("Message is sent...")
+    console.log("Jak to odpalic... ?")
 }
   
 ws.onmessage = function (evt) { 
