@@ -5,7 +5,7 @@ let ws = new WebSocket("ws://wsei.edu.pl:8010");
 
 
 ws.onopen = function() {
-    ws.send("Message to send");
+    //ws.send("Message to send");
     console.log("Jak to odpalic... ?")
 }
 
@@ -14,7 +14,7 @@ document.querySelector("#wsSend").addEventListener('click', function(){
         title: document.querySelector('#name').value,
         body: document.querySelector('#wsMsg').value,
     }
-    wsSend(JSON.stringify(sendMsg))
+    ws.Send(JSON.stringify(sendMsg))
 })
 
 
